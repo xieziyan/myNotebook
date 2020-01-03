@@ -1,0 +1,16 @@
+python train.py --data data/cd.data --weights weights/yolov3-tiny.weights --cfg cfg/yolov3-tiny.cfg --epochs 10
+
+
+python detect.py --data data/cd.data --cfg cfg/yolov3-spp.cfg --weights weights/best.pt
+
+
+python train.py --train crnnData/output/ --valRoot crnnData/output/
+
+
+python -m pip install -U pip 升级pip
+
+conda create -n xxx 创建环境
+
+python -m ipykernel install --user --name 环境名称 --display-name “显示名称”
+
+
